@@ -127,4 +127,4 @@ void deallocateBoard(TicTacToe& gameIn)
     delete [] gameIn.board[i];     // deallocate the 2D array, cell by cell
   delete [] gameIn.board;          // delete the outer array
   gameIn.board = NULL;             // defensive programming (the board no longer exists)
-} // end deallocateBoard
+} 
