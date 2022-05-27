@@ -36,7 +36,7 @@ bool row(char grid[N][M]){
 	for(int row = N-1; row > -1; row--){
 		for(int col = 0; col < M-(a_row-1); col++){
 			for(int i = col+1; i < col+a_row; i++){
-				if(grid[row][col] == grid[row][i] && (grid[row][col] == 'X' || grid[row][col] == 'O')){
+				if(grid[row][col] == grid[row][i] && grid[row][col] != ' '){
 					if(i == (col+a_row)-1)
 						return true;
 					continue;
@@ -53,7 +53,7 @@ bool column(char grid[N][M]){
 	for(int col = 0; col < M; col++){
 		for(int row = N-1; row > a_row-2; row--){
 			for(int i = row-1; i > row-a_row; i--){
-				if (grid[row][col] == grid[i][col] && (grid[row][col] == 'X' || grid[row][col] == 'O')){
+				if (grid[row][col] == grid[i][col] && grid[row][col] != ' '){
 					if(i==(row-a_row)+1)
 						return true;
 					continue;
@@ -71,7 +71,7 @@ bool diagonals(char grid[N][M]){
 		for(int col = M-1; col > a_row-2; col--){
 			int j = col -1;
 			for(int i = row-1; i > row-a_row; i--){
-				if (grid[row][col] == grid[i][j] && (grid[row][col] == 'X' || grid[row][col] == 'O')){
+				if (grid[row][col] == grid[i][j] && grid[row][col] != ' '){
 					if(i == (row-a_row)+1)
 						return true;
 					j -= 1;
@@ -86,7 +86,7 @@ bool diagonals(char grid[N][M]){
 		for(int col = 0; col < M-(a_row-1); col++){
 			int j = col + 1;
 			for(int i = row-1; i > row-a_row; i--){
-				if (grid[row][col] == grid[i][j] && (grid[row][col] == 'X' || grid[row][col] == 'O')){
+				if (grid[row][col] == grid[i][j] && grid[row][col] != ' '){
 					if(i == (row-a_row)+1)
 						return true;
 					j += 1;
