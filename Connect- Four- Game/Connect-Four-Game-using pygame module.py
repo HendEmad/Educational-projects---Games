@@ -9,8 +9,8 @@ BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 ROW_COUNT = 6
 COLUMN_COUNT = 7
-even = 0
-ood = 1
+EVEN = 0
+ODD = 1
 
 '''the steps will be taken as follows:
 1. The game will begin with the player making a selection,0-6 represents the column that they want ti drop the ball in.
