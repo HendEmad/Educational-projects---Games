@@ -79,36 +79,47 @@ It is an optimization technique for minimax algorithm. It reduces the computatio
 
 for the same exapme:
 1. first step --> E node --> K --> continue:
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170886590-72ab7a45-551a-458f-b2b4-2498de0b9ad8.PNG)
 
 2. second step --> E node --> L --> contunie:
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170886690-b80f8913-1807-4850-a669-a613c74a1117.PNG)
 
 3. We finished E node (E-path), we will update β to 3(minimum value) and α will be -∞:
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170886860-0942510e-cb16-40a3-b0d0-35dbd9f6f105.PNG)
 
 4. 
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170886969-92577ad7-c646-4539-a49f-f5c253a23b78.PNG)
 
 5.
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170887035-1bad8bf6-679d-4dc1-9a5d-86de791880bf.PNG)
 
 6.
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170887130-dde0b769-c351-4be8-af7d-aebe6eb01a85.PNG)
 
 7.
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170887168-924ff428-9007-44a9-8fc7-4a1a3e0069f9.PNG)
 
 8.
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170887200-68b1942e-00cf-42f7-89b6-2e2c6dcdaf40.PNG)
 
 9.
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170887228-4842f2e6-ff0a-443e-b013-90978b7196ca.PNG)
 
 10.
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170887246-cc83f23f-077c-4bdc-8401-f050d860c45c.PNG)
 
 11.
+
 ![Capture](https://user-images.githubusercontent.com/91827137/170887274-2209a563-3761-41e8-8a71-1b45d6ee4438.PNG)
 
 So, the new algorithm will be:
