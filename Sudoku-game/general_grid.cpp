@@ -73,7 +73,7 @@ private:
     nColumn = size;
 }
 
-    // A function to solve the Sudoku puzzle
+    // A function returns if the suboku can be solved or not
     bool solveSudoku(int r, int c) {
     if (r >= size)
         return true;

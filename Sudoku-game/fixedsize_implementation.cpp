@@ -75,7 +75,7 @@ void nextEmpty(int arr[9][9], int r, int c, int &nRow, int &nColumn) {
     nColumn = index % 9;
 }
 
-//A function returns if the suboku can be solved or nor
+//A function returns if the suboku can be solved or not
 bool solveSudoku(int arr[9][9], int r, int c) {
     // system("cls");
     // printSudoku(arr);
