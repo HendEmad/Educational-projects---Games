@@ -9,3 +9,13 @@ There will be multiple solutions, which can be represented as a tree. We will tr
 
 * Best case scenario: The result is found in the first branch.
 * Worst case scenario: We explore all branches to find the optimal solution.
+
+
+***The Sudoku board:***
+
+![image](image.png)
+
+
+***The solution:***
+
+![image2](image-1.png)
